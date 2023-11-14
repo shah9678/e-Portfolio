@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content="width=device-width,intial-scale=1.0">
+         <title>Portfolio Website</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/1b6d49cb3c.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+<div id="header">
+    <div class="container"></div>
+      <nav>
+        <img src="logo.jpg" alt="" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cv">CV</a></li>  
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    <div class="header-text">
+        <p> Web and Android Software Developer</p>
+        <h1>
+            Hi! I am a<span> <br>ADIT M.SHAH</span>
+        </h1>
+
+    </div>
+</div>
+<!-------------------ABOUT------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="user.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                  <h1 class="sub-title"> ABOUT ME </h1>
+                  <p><br>My name is Adit Shah, Hello! I am a dedicated and passionate web and software developer with a strong foundation in both front-end and back-end technologies. With a deep love for coding and problem-solving, I thrive in the ever-evolving world of technology. I am constantly seeking opportunities to expand my knowledge and stay up-to-date with the latest advancements in the field.
+
+                    In my journey as a developer,What sets me apart as a developer is my ability to bridge the gap between design and functionality. I believe in crafting seamless user experiences by paying attention to both the visual aspect and the underlying code. I have a keen eye for detail, ensuring that my projects are not only aesthetically pleasing but also optimized for performance and usability.
+                    Collaboration is at the core of my work style. I thrive in team environments where I can contribute my ideas, learn from others, and collectively create outstanding solutions. I am an effective communicator, able to translate complex technical concepts into simple terms for stakeholders and non-technical team members. I value feedback and am always open to constructive criticism, as it helps me grow both personally and professionally.
+                    In summary, I am a passionate web and software developer with a strong foundation in both front-end and back-end technologies. My focus on creating seamless user experiences, combined with my collaborative mindset and dedication to continuous learning, allows me to contribute effectively to the development of impactful web and software solutions. I am excited about the possibilities that lie ahead and look forward to being a part of projects that push the boundaries of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                         
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend developer</span><br>Html,Css,JS,django,flask</li>
+                            <li><span>Programming</span><br>Pyhton, c#, dotnet</li>
+                            <li><span>Backend developer</span><br>SQL,PHP,bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sprouto Infosolutions pvt.ltd.</span><br>Web Developer and dot net Intern</li>
+                            <li><span>Brainy Beams Technologies pvt.ltd.</span><br>Python with django Intern</li>
+                            <li><span>AIESEC IN BARODA (VICE PRESIDENT) </span><br>Leadership and personality development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> BACHELOR OF ENGINEERING - Computer Engineering</span><br>SVIT(GTU) <br>CGPA:8.50 </li>
+                            <li><span>Class XII(SCIENCE-PCM)</span><br>92.00%</li>
+                            <li><span>CLASS X</span><br>9.4 CGPA</li>
+                        </ul>
+                    </div>
+                    </div>
+        </div>
+
+    </div>
+</div>
+<!-------------------PORTFOLIO------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tile"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>This is an Amazon Clone</p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                     <h3> Resturant Website </h3>
+                     <p>Resturant Website made using html,css,js</p>
+                     <a href=""><i class="fa-brands fa-github"></i></a>
+                     <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3> Direct Clinic  </h3>
+                    <p>Direct Clinic made using html,css,js</p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+<!-----------------------CONTACT------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                 <p><i class="fa-regular fa-paper-plane"></i>aditshah9678@gmail.com</p>
+                 <p><i class="fa-solid fa-phone"></i>9499824756</p>
+                 <div class="social-icons">
+                     <a href=""><i class="fa-brands fa-facebook"></i></a>
+                     <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                     <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/in/suhani-srivastava-31b316214/"><i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+                 <a href="CV.pdf" download class="btn btn2" id="cv">Download CV</a>
+               </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Mesaage" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  <i class="fa-regular fa-copyright"></i>Made by ADIT SHAH<i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+<script>
+     var tablinks =document.getElementsByClassName("tab-links");
+     var tabcontents =document.getElementsByClassName("tab-contents");
+     
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");  
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
